@@ -76,11 +76,11 @@ export AWS_DEFAULT_REGION=us-east-1
 aws --endpoint-url=http://localhost:4566 sqs create-queue --queue-name email-notif-queue
 
 # Create the SNS topic
-aws --endpoint-url=http://localhost:4566 sns create-topic --name order-notifications
+aws --endpoint-url=http://localhost:4566 sns create-topic --name order-confirmations
  
 # Subscribe the SQS queue to the SNS topic
 aws --endpoint-url=http://localhost:4566 sns subscribe \
-  --topic-arn arn:aws:sns:us-east-1:000000000000:order-notifications \
+  --topic-arn arn:aws:sns:us-east-1:000000000000:order-confirmations \
   --protocol sqs \
   --notification-endpoint arn:aws:sqs:us-east-1:000000000000:email-notif-queue
  
