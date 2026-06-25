@@ -102,13 +102,13 @@ npm run dev
 You can open [http://localhost:3000](http://localhost:3000) in your browser.
 
 
-## ☁️ Original AWS Deployment
+# Original AWS Deployment
  
 This project was originally deployed on live AWS infrastructure using the same SQS → SNS → SES pipeline. The demo video above shows the fully functioning AWS-backed version. The current codebase points to LocalStack endpoints so anyone can run it locally without an AWS account.
  
 ---
  
-## 📁 Project Structure
+# Project Structure
  
 ```
 ├── app/                  # Next.js app directory (pages, API routes, components)
@@ -122,7 +122,7 @@ This project was originally deployed on live AWS infrastructure using the same S
  
 ---
  
-## 📄 License
+# License
  
 This project was built for personal learning and portfolio purposes.
 
